@@ -44,6 +44,7 @@ public class StudentUtil {
     //In the following example, I have scheduled the task to be executed every minute -
     @Scheduled(cron = "0 * * * * ?")
     public void scheduleTaskWithCronExpression() {
+    	System.out.println("hello world!!");
     	logger.info("Cron Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));
     }
 }
